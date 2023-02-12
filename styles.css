@@ -1,0 +1,36 @@
+html, body, ul {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    width: 100%;
+    box-sizing: content-box;
+    background-color: white;
+    overflow-x: hidden;
+    background-color: darkred;
+}
+
+header {
+    position: relative;
+    z-index: 1;
+    background-color: #147a89;
+    height: 640px;
+}
+
+main {
+position: relative;
+    z-index: 2;
+    background-color: #ffffff;
+    height: 360px;
+    width: 105%;
+    left: -6px;
+    transform: rotate(2deg);
+}
+
+footer {
+    position: relative;
+    z-index: 1;
+    background-color: #1ebbcc;
+    height: 600px;
+}
