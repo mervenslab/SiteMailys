@@ -3,34 +3,82 @@ html, body, ul {
     padding: 0;
 }
 
+ul {
+    list-style: none;
+}
 body {
-    width: 100%;
     box-sizing: content-box;
-    background-color: white;
     overflow-x: hidden;
-    background-color: darkred;
+    background-image: url(test.svg);
+    background-repeat: no-repeat;
+    width: 100%;
+    background-size: 100%;
+    height: 1600px;
 }
 
-header {
-    position: relative;
-    z-index: 1;
-    background-color: #147a89;
-    height: 640px;
+a {
+    color: white;
+    text-decoration: none;
+    border-bottom: 1px solid rgba(255, 255, 255, 0);
+    padding: 1rem 2rem;
+}
+
+header nav ul {
+    display: flex;
+    justify-content: space-evenly;
+    margin: 40px 250px;
+}
+
+header nav ul li {
+    font-size: 2rem;
+}
+
+a:hover {
+    border-bottom: 1px solid rgba(255, 255, 255, 1);
+    font-weight: bold;
+}
+
+#imageprofil {
+    width: 500px;
+    height: 500px;
+    margin-left: 25%;
+}
+
+
+#presentation p {
+    color: white;
+    font-size: 1.4rem;
+    width: 80%;
+    margin-left: auto;
+    margin-right: auto;
 }
 
 main {
-position: relative;
-    z-index: 2;
-    background-color: #ffffff;
-    height: 360px;
-    width: 105%;
-    left: -6px;
-    transform: rotate(2deg);
+    width: 80%;
+    margin: auto;
 }
 
-footer {
-    position: relative;
-    z-index: 1;
-    background-color: #1ebbcc;
-    height: 600px;
+#presentation {
+    margin-top: 100px;
+    display: flex;
+}
+
+#presentation article {
+    display: flex;
+    flex-direction: column;
+}
+
+#presentation img {
+    margin: 0% 4%;
+    
+}
+
+#imageprofileffet {
+    width: 500px;
+    height: 500px;
+    border: 2px solid #2eb7cd;
+    position: absolute;
+    top: 180px;
+    left: 290px;
+    border-radius: 50%;
 }
